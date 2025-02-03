@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Login Instagram</title>
+<link rel="stylesheet" href="sstyles.css">
+
+</head>
+<style>
+.mydiv{
+	border: 3px outset black;
+	background-color: black;
+	text-align: center;
+	width:300px;
+	height:300px;
+	margin-left:550px;
+	margin-top:400px;
+	position:absolute;
+
+}
+</style>
+<div class="myDiv"><h2>Welcome, user!</h2>
+	<p><h3>Please log in</h3></p>
+	
+	<input type="text" style="width:200px; height:30px;" placeholder="User Name" id="she"><br><br>
+	<input type="password" style="width:200px; height:30px;" placeholder="Password" id="he"><br><br>
+        <button onclick="gh()" style="width:100px; height:30px;">login in</button>
+	<br><br>
+	<a href="file:///C:/Users/bcomd2414/Documents/registeration.html">Register</a>
+
+
+</div>
+<div id="image" style="background: url(dell.jpg) no-repeat; width:100%; height:1000px; background-size:100%;"></div>
+<body >
+<style>
+body {cursor: url('icons8-twitch-64.png'),auto;}
+</style>
+
+<center>
+
+</center>
+
+<script>
+function gh()
+{
+
+let Emaila = document.getElementById("she").value;
+let Passworda = document.getElementById("he").value;
+let Email = localStorage.getItem("Email");
+let Password = localStorage.getItem("Password");
+if (Emaila == Email && Passworda == Password)
+
+
+{alert("you are valid");
+window.location.href ="explore.html";
+
+}
+else{alert("intruder");}
+}
+
+
+
+</script>
+
+</body>
+</html>

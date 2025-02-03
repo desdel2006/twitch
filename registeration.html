@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>register form</title>
+<script>
+
+function abc()
+{
+let Email=document.getElementById("bro");
+localStorage.setItem("Email",Email.value);
+let Password=document.getElementById("girl");
+localStorage.setItem("Password",Password.value);
+alert(localStorage.getItem("Email"));
+alert(localStorage.getItem("Password"));
+}
+
+
+function def()
+{
+alert("reset");
+}
+
+
+
+</script>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<div id="image" style="background: url(111.webp) no-repeat; width:100%; height:1000px; background-size:100%;">
+<center>
+<h1><center><b><u> Register!!</center></b></u></h1>
+<br><br>
+
+<br>
+<h3>Name : <input type="text"><br><br>
+Date of birth:<input type="date"><br><br>
+
+
+Age	: 
+<input type="number"><br><br>
+
+Gender: 
+<input type ="radio" name="gender" value="male">Male
+		  <input type="radio" name="gender" value="female">Female<br><br>
+
+Address:<input type="textarea"><br><br>
+
+Country: <select name="COUNTRY" id="COUNTRY">
+		  <option value="INDIA">INDIA</option>
+		  <option value="USA">USA</option>
+		  <option value="UK">UK</option>
+		  <option value="GERMANY">GERMANY</option>
+		  </select><br><br>
+
+
+
+Language:  <input type ="checkbox" name="language" value="English">English
+		  <input type="checkbox" name="language1" value="Malayalam"> Malayalam
+                  <input type ="checkbox" name="language2" value="German">German <br><br>
+
+
+
+
+
+Games:<input type="checkbox" name="games" value="PCgames">PCgames
+		  <input type="checkbox" name="games1" value="Mobile games"> Mobile games<br><br>
+	
+	
+
+Phone number: <input type="number"><br><br>
+
+Email:<input type="email" Id="bro">
+<br><br>
+Password: <input type="password" Id="girl">
+<br><br>
+</h3>
+
+
+<a href="file:///C:/Users/bcomd2414/Documents/thank%20you.html"><button onclick="abc()">Submit</button>
+</a>
+<a href='index.html'><button onclick="def()">Reset</button></a>
+
+
+
+
+</center>
+
+<style>
+body {cursor: url('icons8-twitch-64.png'),auto;}
+</style>
+
+<body><center>
+<h1>Welcome to Twitch Community</h1>
+</center>
+</div>
+
+
+</body>
+</html>
